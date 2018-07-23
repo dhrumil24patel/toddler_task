@@ -7,7 +7,7 @@
   "keywords": [],
   "author": "Dhrumil Patel",
   "dependencies": {
-    "apollo-server-express": "^1.3.4",
+    "apollo-server-express": "1.3.4",
     "apollo-server-module-graphiql": "latest",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
