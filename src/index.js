@@ -97,7 +97,7 @@ const startServer = async () => {
     });
 
   // Wrap the Express server
-  const ws = createServer(app);
+  const ws = createServer(express());
   ws.listen(3001, () => {
     console.log(`GraphQL Server is now running on http://localhost:3001`);
     // Set up the WebSocket for handling GraphQL subscriptions
