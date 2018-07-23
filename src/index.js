@@ -4,6 +4,10 @@ import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
 import {PubSub, withFilter} from 'graphql-subscriptions'
 
+import { execute, subscribe } from 'graphql';
+import { createServer } from 'http';
+import { SubscriptionServer } from 'subscriptions-transport-ws';
+
 import { connectToDB } from '../database';
 
 const pubsub = new PubSub();
@@ -91,6 +95,21 @@ const startServer = async () => {
     app.listen(process.env.PORT || 3000, () => {
         console.log(`Server started on port: ${process.env.PORT || 3000}`);
     });
+
+  // Wrap the Express server
+  const ws = createServer(server);
+  ws.listen(3001, () => {
+    console.log(`GraphQL Server is now running on http://localhost:3001`);
+    // Set up the WebSocket for handling GraphQL subscriptions
+    new SubscriptionServer({
+      execute,
+      subscribe,
+      schema
+    }, {
+      server: ws,
+      path: '/subscriptions',
+    });
+  });
 };
 
 // Connecting to DB and then start the server

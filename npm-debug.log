@@ -1,47 +1,113 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'D:\\Softwares\\Installations\\nodejs\\node.exe',
 1 verbose cli   'D:\\Softwares\\Installations\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
+1 verbose cli   'install',
+1 verbose cli   'subscriptionns-transport-ws',
+1 verbose cli   '--save' ]
 2 info using npm@3.10.3
 3 info using node@v6.4.0
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle toddler-task@1.0.0~prestart: toddler-task@1.0.0
-6 silly lifecycle toddler-task@1.0.0~prestart: no script for prestart, continuing
-7 info lifecycle toddler-task@1.0.0~start: toddler-task@1.0.0
-8 verbose lifecycle toddler-task@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle toddler-task@1.0.0~start: PATH: D:\Softwares\Installations\nodejs\node_modules\npm\bin\node-gyp-bin;D:\Work\Tasks\Toddler_task\node_modules\.bin;D:\Softwares\Installations\nodejs;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\libnvvp;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Softwares\Installations\nodejs\;C:\Users\Dhrumil\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\PuTTY\;C:\Users\Dhrumil\Anaconda3;C:\Users\Dhrumil\Anaconda3\Library\mingw-w64\bin;C:\Users\Dhrumil\Anaconda3\Library\usr\bin;C:\Users\Dhrumil\Anaconda3\Library\bin;C:\Users\Dhrumil\Anaconda3\Scripts;C:\Users\Dhrumil\AppData\Local\Microsoft\WindowsApps;C:\Users\Dhrumil\AppData\Roaming\Dashlane\5.12.0.19744\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\Dhrumil\AppData\Roaming\Dashlane\5.12.0.19744\ucrt;C:\Program Files\Git\usr\bin;C:\Users\Dhrumil\AppData\Roaming\npm;D:\Softwares\Installations\nodejs\node_modules\npm\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;D:\Softwares\Setups\cudnn-9.0-windows10-x64-v7.1\cuda\bin;C:\Program Files (x86)\GnuWin32\bin;D:\Softwares\Installations\Android\Android Studio\jre\bin;
-10 verbose lifecycle toddler-task@1.0.0~start: CWD: D:\Work\Tasks\Toddler_task
-11 silly lifecycle toddler-task@1.0.0~start: Args: [ '/d /s /c', 'babel-node src/index.js' ]
-12 silly lifecycle toddler-task@1.0.0~start: Returned: code: 1  signal: null
-13 info lifecycle toddler-task@1.0.0~start: Failed to exec start script
-14 verbose stack Error: toddler-task@1.0.0 start: `babel-node src/index.js`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\lib\utils\lifecycle.js:242:16)
-14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at EventEmitter.emit (events.js:191:7)
-14 verbose stack     at ChildProcess.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
-14 verbose stack     at emitTwo (events.js:106:13)
-14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:852:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
-15 verbose pkgid toddler-task@1.0.0
-16 verbose cwd D:\Work\Tasks\Toddler_task
-17 error Windows_NT 10.0.17134
-18 error argv "D:\\Softwares\\Installations\\nodejs\\node.exe" "D:\\Softwares\\Installations\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-19 error node v6.4.0
-20 error npm  v3.10.3
-21 error code ELIFECYCLE
-22 error toddler-task@1.0.0 start: `babel-node src/index.js`
-22 error Exit status 1
-23 error Failed at the toddler-task@1.0.0 start script 'babel-node src/index.js'.
-23 error Make sure you have the latest version of node.js and npm installed.
-23 error If you do, this is most likely a problem with the toddler-task package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     babel-node src/index.js
-23 error You can get information on how to open an issue for this project with:
-23 error     npm bugs toddler-task
-23 error Or if that isn't available, you can get their info via:
-23 error     npm owner ls toddler-task
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData subscriptionns-transport-ws
+8 silly fetchNamedPackageData subscriptionns-transport-ws
+9 silly mapToRegistry name subscriptionns-transport-ws
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'subscriptionns-transport-ws',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'subscriptionns-transport-ws',
+12 silly mapToRegistry   name: 'subscriptionns-transport-ws',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/subscriptionns-transport-ws
+14 verbose request uri https://registry.npmjs.org/subscriptionns-transport-ws
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 12:46:46 PM
+17 verbose request id bc014c95dada9c02
+18 http request GET https://registry.npmjs.org/subscriptionns-transport-ws
+19 http 404 https://registry.npmjs.org/subscriptionns-transport-ws
+20 verbose headers { date: 'Mon, 23 Jul 2018 07:16:50 GMT',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-length': '21',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'set-cookie': [ '__cfduid=dd9be759e7a24c4d3dc22cef09f2bea0a1532330209; expires=Tue, 23-Jul-19 07:16:49 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'cf-cache-status': 'MISS',
+20 verbose headers   'cf-ray': '43ec5d20de5a88b4-BOM',
+20 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 verbose headers   'npm-notice': 'Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".',
+20 verbose headers   vary: 'accept-encoding, accept',
+20 verbose headers   server: 'cloudflare' }
+21 warn notice Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".
+22 silly get cb [ 404,
+22 silly get   { date: 'Mon, 23 Jul 2018 07:16:50 GMT',
+22 silly get     'content-type': 'application/json',
+22 silly get     'content-length': '21',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie': [ '__cfduid=dd9be759e7a24c4d3dc22cef09f2bea0a1532330209; expires=Tue, 23-Jul-19 07:16:49 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'cf-cache-status': 'MISS',
+22 silly get     'cf-ray': '43ec5d20de5a88b4-BOM',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'npm-notice': 'Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     server: 'cloudflare' } ]
+23 silly fetchPackageMetaData Error: Not found : subscriptionns-transport-ws
+23 silly fetchPackageMetaData     at makeError (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+23 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+23 silly fetchPackageMetaData     at Request._callback (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+23 silly fetchPackageMetaData     at Request.self.callback (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+23 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+23 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+23 silly fetchPackageMetaData     at Request.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+23 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+23 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+23 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+23 silly fetchPackageMetaData  error for subscriptionns-transport-ws { Error: Not found : subscriptionns-transport-ws
+23 silly fetchPackageMetaData     at makeError (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+23 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+23 silly fetchPackageMetaData     at Request._callback (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+23 silly fetchPackageMetaData     at Request.self.callback (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+23 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+23 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+23 silly fetchPackageMetaData     at Request.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+23 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+23 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+23 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+23 silly fetchPackageMetaData   pkgid: 'subscriptionns-transport-ws',
+23 silly fetchPackageMetaData   statusCode: 404,
+23 silly fetchPackageMetaData   code: 'E404' }
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Starting
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack Error: Not found : subscriptionns-transport-ws
+29 verbose stack     at makeError (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+29 verbose stack     at CachingRegistryClient.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+29 verbose stack     at Request._callback (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+29 verbose stack     at Request.self.callback (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+29 verbose stack     at emitTwo (events.js:106:13)
+29 verbose stack     at Request.emit (events.js:191:7)
+29 verbose stack     at Request.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+29 verbose stack     at emitOne (events.js:101:20)
+29 verbose stack     at Request.emit (events.js:188:7)
+29 verbose stack     at IncomingMessage.<anonymous> (D:\Softwares\Installations\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+30 verbose statusCode 404
+31 verbose pkgid subscriptionns-transport-ws
+32 verbose cwd D:\Work\Tasks\Toddler_task
+33 error Windows_NT 10.0.17134
+34 error argv "D:\\Softwares\\Installations\\nodejs\\node.exe" "D:\\Softwares\\Installations\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "subscriptionns-transport-ws" "--save"
+35 error node v6.4.0
+36 error npm  v3.10.3
+37 error code E404
+38 error 404 Not found : subscriptionns-transport-ws
+39 error 404
+40 error 404 'subscriptionns-transport-ws' is not in the npm registry.
+41 error 404 You should bug the author to publish it (or use the name yourself!)
+42 error 404 Note that you can also install from a
+43 error 404 tarball, folder, http url, or git url.
+44 verbose exit [ 1, true ]
