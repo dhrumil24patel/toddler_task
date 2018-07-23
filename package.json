@@ -16,7 +16,7 @@
     "graphql-tools": "^2.20.0",
     "graphql-yoga": "1.14.12",
     "mongoose": "^5.0.3",
-    "subscriptions-transport-ws": "latest"
+    "subscriptions-transport-ws": "^0.3.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
