@@ -84,7 +84,7 @@ const startServer = async () => {
     app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
     app.use('/', graphiqlExpress({
       endpointURL: '/graphql',
-      subscriptionsEndpoint: `ws://dhrumil242.herokuapp.com:3001/subscriptions`,
+      subscriptionsEndpoint: `wss://dhrumil242.herokuapp.com:3001/subscriptions`,
     }));
 
     // Initiate the server
