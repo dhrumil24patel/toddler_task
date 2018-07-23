@@ -5,7 +5,7 @@ import { makeExecutableSchema } from 'graphql-tools';
 import {PubSub, withFilter} from 'graphql-subscriptions'
 
 import { execute, subscribe } from 'graphql';
-import { createServer } from 'http';
+import { createServer } from 'https';
 import { SubscriptionServer } from 'subscriptions-transport-ws';
 
 import { connectToDB } from '../database';
@@ -67,12 +67,7 @@ const startServer = async () => {
         Subscription: {
             userAdded: {
               resolve: (payload) => payload,
-              subscribe: withFilter(
-                () => pubsub.asyncIterator('addUser'),
-                (payload, args) => {
-                  return true;
-                },
-              ),
+              subscribe: () => pubsub.asyncIterator(['addUser'])
             }
         }
     };
