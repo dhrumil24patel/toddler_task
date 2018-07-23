@@ -2,8 +2,11 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
+import {PubSub, withFilter} from 'graphql-subscriptions'
 
 import { connectToDB } from '../database';
+
+const pubsub = new PubSub();
 
 // Start the http server
 const startServer = async () => {
@@ -16,6 +19,11 @@ const startServer = async () => {
       name: String
       password: String
     }
+    
+    type UserSubscription{
+      _id: ID!
+      name: String
+    }
 
     type Query {
       users: [User]
@@ -23,6 +31,10 @@ const startServer = async () => {
 
     type Mutation {
       addUser(input: UserInput): User
+    }
+    
+    type Subscription{
+      userAdded: UserSubscription
     }
 
     input UserInput {
@@ -43,9 +55,22 @@ const startServer = async () => {
         Mutation: {
             addUser: async(root, args) => {
                 const res = await User.create(args.input);
+                pubsub.publish('userAdded', res);
                 return res;
             },
         },
+
+        Subscription: {
+            userAdded: {
+              resolve: (payload) => payload,
+              subscribe: withFilter(
+                () => pubsub.asyncIterator('addUser'),
+                (payload, args) => {
+                  return true;
+                },
+              ),
+            }
+        }
     };
 
     // Define a schema
@@ -57,7 +82,10 @@ const startServer = async () => {
     // Initiate express and define routes
     const app = express();
     app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
-    app.use('/', graphiqlExpress({ endpointURL: '/graphql' }));
+    app.use('/', graphiqlExpress({
+      endpointURL: '/graphql',
+      subscriptionsEndpoint: `ws://dhrumil242.herokuapp.com:3001/subscriptions`,
+    }));
 
     // Initiate the server
     app.listen(process.env.PORT || 3000, () => {
