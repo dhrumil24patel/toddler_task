@@ -2,7 +2,7 @@
   "name": "toddler-task",
   "version": "1.0.0",
   "scripts": {
-    "start": "babel-node src/index.js"
+    "start": "babel-node src/index.js --watch"
   },
   "keywords": [],
   "author": "Dhrumil Patel",
@@ -16,7 +16,7 @@
     "graphql-tools": "^2.20.0",
     "graphql-yoga": "1.14.12",
     "mongoose": "^5.0.3",
-    "subscriptions-transport-ws": "^0.3.1"
+    "subscriptions-transport-ws": "^0.7.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
