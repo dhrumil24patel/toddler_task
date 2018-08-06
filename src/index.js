@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import { makeExecutableSchema } from 'graphql-tools';
+const cors = require('cors')
 import schema from './graphql/rootSchema';
 
 import { connectToDB } from '../database';
@@ -10,6 +11,7 @@ import { connectToDB } from '../database';
 const startServer = async () => {
     // Initiate express and define routes
     const app = express();
+	app.use(cors()) // enable `cors` to set HTTP response header: Access-Control-Allow-Origin: *
     app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
     app.use('/', graphiqlExpress({
       endpointURL: '/graphql',
