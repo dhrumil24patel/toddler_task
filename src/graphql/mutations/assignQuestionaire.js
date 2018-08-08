@@ -12,6 +12,7 @@ export const assignQuestionaire = (root, {input}, context, info) => {
 					input.questions = resTemplate[0].questions;
 					input.responded = false;
 					input.assignedAt = Date.now();
+					input.respondedAt = 0;
 					console.log('input ', input);
 					Questionaire.create(input)
 						.then(res => {

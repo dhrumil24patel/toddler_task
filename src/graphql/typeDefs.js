@@ -1,4 +1,6 @@
 export const typeDefs = `
+	scalar Date
+	
 	type Organization {
 		_id: ID!
 		name: String
@@ -77,17 +79,23 @@ export const typeDefs = `
     	questionaireTemplateType: String
     	username: String
     	responded: Boolean
+    	assignedBy: String
+    	organization: String
+    	assignedAt: Date
+    	respondedAt: Date
     	questions: [QuestionaireQuestion]
     }
     input QuestionaireInput{
     	questionaireTemplateType: String!
     	username: String
+    	assignedBy: String
+    	organization: String
     }
     input QuestionaireResponseInput{
     	_id: ID!
     	questionaireTemplateType: String!
     	username: String
-    	questions: [QuestionaireQuestion]
+    	questions: [QuestionaireQuestionInput]
     }
     
     type Authorization{
@@ -115,6 +123,7 @@ export const typeDefs = `
       departments(organization: String!): [Department]
       organizations: [Organization]
       questionaireTemplates: [QuestionaireTemplate]
+      questionaires(organization: String, username: String, assignedBy: String): [Questionaire]
     }
 
     type Mutation {

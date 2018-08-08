@@ -82,7 +82,29 @@ const QUESTIONAIRE_SCHEMA = DB.Schema({
 		required: true,
 		trim: true
 	},
+	organization: {
+		type: String,
+		unique: false,
+		required: true,
+		trim: true
+	},
+	assignedBy: {
+		type: String,
+		unique: false,
+		required: true,
+		trim: true
+	},
+	responded: {
+		type: Boolean,
+		unique: false,
+		required: true
+	},
 	assignedAt: {
+		type: Date,
+		unique: false,
+		required: false
+	},
+	respondedAt: {
 		type: Date,
 		unique: false,
 		required: false

@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23dedd10-ff90-4a23-8392-2512f5d52222" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations/addOrganization.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations/addQuestionaireTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations/deleteUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations/respondToQuestionaire.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/queries/departments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/queries/organizations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/queries/questionaireTemplates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/queries/questionaires.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/mutations/addUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations/addUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/queries/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/rootMutation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/rootMutation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/mutations/respondToQuestionaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations/respondToQuestionaire.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graphql/rootQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/rootQuery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graphql/typeDefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/typeDefs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,17 +25,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/models/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            <state relative-caret-position="152">
+              <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -63,29 +43,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphql/mutations/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="14" lean-forward="true" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteUser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphql/mutations/deleteUser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="typeDefs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphql/typeDefs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="77" />
+              <caret line="136" column="71" selection-start-line="136" selection-start-column="71" selection-end-line="136" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rootQuery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphql/rootQuery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questionaires.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphql/queries/questionaires.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="departments.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphql/queries/departments.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organizations.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphql/queries/organizations.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -106,8 +107,8 @@
       <file leaf-file-name="assignQuestionaire.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="12" column="40" selection-end-line="35" />
+            <state relative-caret-position="192">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -115,17 +116,8 @@
       <file leaf-file-name="respondToQuestionaire.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graphql/mutations/respondToQuestionaire.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="questionaireTemplates.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphql/queries/questionaireTemplates.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="102">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -149,6 +141,12 @@
       <find>Authorization</find>
       <find>User</find>
       <find>userid</find>
+      <find>Questionaire</find>
+      <find>name.value</find>
+      <find>name</find>
+      <find>respond</find>
+      <find>QuestionaireInput</find>
+      <find>questionairequestioninp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,17 +167,18 @@
         <option value="$PROJECT_DIR$/src/graphql/queries/organizations.js" />
         <option value="$PROJECT_DIR$/src/graphql/mutations/addQuestionaireTemplate.js" />
         <option value="$PROJECT_DIR$/src/graphql/queries/questionaireTemplates.js" />
-        <option value="$PROJECT_DIR$/src/graphql/rootQuery.js" />
         <option value="$PROJECT_DIR$/src/graphql/queries/users.js" />
         <option value="$PROJECT_DIR$/src/graphql/mutations/register.js" />
         <option value="$PROJECT_DIR$/src/graphql/mutations/login.js" />
         <option value="$PROJECT_DIR$/src/graphql/mutations/deleteUser.js" />
         <option value="$PROJECT_DIR$/database/index.js" />
-        <option value="$PROJECT_DIR$/database/models/index.js" />
-        <option value="$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/graphql/typeDefs.js" />
         <option value="$PROJECT_DIR$/src/graphql/rootMutation.js" />
+        <option value="$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js" />
+        <option value="$PROJECT_DIR$/database/models/index.js" />
+        <option value="$PROJECT_DIR$/src/graphql/rootQuery.js" />
+        <option value="$PROJECT_DIR$/src/graphql/queries/questionaires.js" />
+        <option value="$PROJECT_DIR$/src/graphql/typeDefs.js" />
         <option value="$PROJECT_DIR$/src/graphql/mutations/respondToQuestionaire.js" />
       </list>
     </option>
@@ -294,7 +293,7 @@
       <workItem from="1532326115892" duration="13979000" />
       <workItem from="1533575090333" duration="20584000" />
       <workItem from="1533695087409" duration="11832000" />
-      <workItem from="1533721418612" duration="2604000" />
+      <workItem from="1533721418612" duration="8511000" />
     </task>
     <task id="LOCAL-00001" summary="Subscription server port added">
       <created>1532330282144</created>
@@ -380,11 +379,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533576201430</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="half-way">
+      <created>1533724296485</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1533724296486</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48999000" />
+    <option name="totallyTimeSpent" value="54906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -394,6 +400,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
@@ -408,7 +415,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,16 +429,10 @@
     <MESSAGE value="dependencies updated" />
     <MESSAGE value="normally working" />
     <MESSAGE value="cors added" />
-    <option name="LAST_COMMIT_MESSAGE" value="cors added" />
+    <MESSAGE value="half-way" />
+    <option name="LAST_COMMIT_MESSAGE" value="half-way" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/graphql/queries/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/graphql/mutations/addUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -514,6 +514,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphql/queries/departments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://H:/backend/backend-graphql/mutations/createAgent.js" />
     <entry file="file://H:/backend/backend-graphql/mutations/createOrganization.js" />
     <entry file="file://H:/backend/backend-graphql/mutations/updateNumberOfAgentsCount.js" />
@@ -634,6 +630,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#1794#1835#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,20 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="21" lean-forward="true" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphql/queries/organizations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphql/rootQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -714,17 +700,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/models/index.js">
+    <entry file="file://$PROJECT_DIR$/src/graphql/rootMutation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="12" column="40" selection-end-line="35" />
+        <state relative-caret-position="289">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,27 +721,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphql/typeDefs.js">
+    <entry file="file://$PROJECT_DIR$/src/graphql/queries/organizations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="77" />
+        <state relative-caret-position="238">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphql/rootMutation.js">
+    <entry file="file://$PROJECT_DIR$/src/graphql/mutations/assignQuestionaire.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="192">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphql/rootQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphql/queries/departments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphql/queries/questionaires.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphql/typeDefs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="136" column="71" selection-start-line="136" selection-start-column="71" selection-end-line="136" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphql/mutations/respondToQuestionaire.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
