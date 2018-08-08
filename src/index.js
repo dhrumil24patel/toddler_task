@@ -11,8 +11,8 @@ import { connectToDB } from '../database';
 const startServer = async () => {
     // Initiate express and define routes
     const app = express();
-	app.use(cors()) // enable `cors` to set HTTP response header: Access-Control-Allow-Origin: *
-    app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
+	app.use(cors()); // enable `cors` to set HTTP response header: Access-Control-Allow-Origin: *
+    app.use('/graphql', bodyParser.json(), (req, res) => graphqlExpress({ schema, context: req.headers })(req, res));
     app.use('/', graphiqlExpress({
       endpointURL: '/graphql',
       subscriptionsEndpoint: `ws://localhost:3001/subscriptions`,
